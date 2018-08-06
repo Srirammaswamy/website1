@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link href="style2.css" rel="stylesheet" type="text/css">
+    <title>Register Form</title>
+    <script>
+        function others() {
+            var x = document.getElementById('course');
+            
+            if(x=='Other') {
+                document.getElementById('coursex').style.display="block";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="Registerbox">
+        <h1>Register Here</h1>
+        <form id="f" method="post" action="signup.php">
+
+            <p>Firstname</p>
+            <input type="Text" name="firstname" placeholder="Enter Firstname" required>
+            <p>Lastname</p>
+            <input type="Text" name="lastname" placeholder="Enter Lastname" required>
+            <p>Username</p>
+            <input type="Text" name="username" placeholder="Enter your unique username" required>
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter Mail id" required>
+            <p>Course</p>
+            <select id="course" name="course" required>
+                <option selected value onfocus="others()">&nbsp&nbsp&nbsp--select--</option>
+                <option>B.E. / B.Tech.</option>
+                <option>M.E. / M.Tech.</option>
+                <option>B.Sc.</option>
+                <option>M.Sc.</option>
+                <option>B.A.</option>
+                <option>M.A.</option>
+                <option>Other</option>
+            </select>
+            <input type="text" id="coursex" name="coursex" placeholder="Enter your course" disabled style="display: none">
+            <p>create Password</p>
+            <input type="password" name="passworda" placeholder="Password with 8 characters" required>
+            <p>Re-Enter Password</p>
+            <input type="password" name="passwordb" placeholder="Enter Password again" required><br>
+            <div class="sub">
+                <input type="submit" name="" value="sign up"><br>
+                <a href="#"> Lost your password?</a><br>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

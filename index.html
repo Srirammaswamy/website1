@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>COGNITO</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="timer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    
+</head>
+
+    
+<body>
+
+    
+    <div class="bgc">
+       <nav class="navbar navbar-expand-md" style="background-color: #0000000">
+        <a class="navbar-brand" href="#" style="color: #ffffff;">COGNITO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-angle-double-down fa-spin"></i></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color: #ffffff;"><i class="fas fa-home"></i>H O M E</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #ffffff;">E V E N T S</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #ffffff;">S P E A K E R S</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #ffffff;">S C H E D U L E</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #ffffff;">L I V E</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #ffffff;">C O N T A C T</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 style="text-align: center;margin-top: 30%;color: #ffffff">COGNITO 2K18</h1>
+            </div>
+            <div class="col-lg-6"><br><br><br>
+    <form method="post" action="login.php">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Username</label>
+      <input type="text" name="urm" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="width: 50%;" required>
+ <!--    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>  -->
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" name="pwd" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width: 50%;" required>
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+      <button style="background-color: #6400e4;padding: 5px 20px;border-radius: 50px;color: white;font-size: 1.2em;"><i class="fas fa-user-plus"></i>  Login</button> <br><br>
+      <label id="signup" onclick="window.location='signup.html'" style="cursor: pointer;">Create an account</label>
+      <style>
+          #signup:hover { color: red; text-decoration: underline; font-style: italic; }
+      </style>  
+    </form>
+
+            </div>
+        </div>
+    </div><br>
+    <h3 style="text-align: center;">Speakers</h3><br>
+	<div class="row" style="text-align: center;">
+	    <div class="col-lg-4"><img src="images/boy.jpeg" alt="" width="150px" height="160px" style="border-radius: 50%"><br> John</div>
+	    <div class="col-lg-4"><img src="images/boy.jpeg" alt="" width="150px" height="160px" style="border-radius: 50%"><br> David</div>
+	    <div class="col-lg-4"><img src="images/boy.jpeg" alt="" width="150px" height="160px" style="border-radius: 50%;"><br> Abdul</div>
+	</div>
+	<br>
+	
+	<h2 style="text-align: center;">Independence Day Special!</h2>
+    <div class="container eff" id="particles-js">
+    
+    </div>
+    <br>
+    <div class="display">
+		<div id="clock" class="clock">
+			<h1 class="event_title">Live Event Starts in</h1>
+			<div id="numbers">
+				<span class="days"></span>
+				<span class="hours"></span>
+				<span class="minutes"></span>
+				<span class="seconds"></span>
+			</div>
+			<div id="units">
+				<span>Days</span>
+				<span>Hours</span>
+				<span>Minutes</span>
+				<span>Seconds</span>
+			</div>
+		</div>
+		<div id="door" class="hide">
+			<h1 class="event_title">Event Is Live</h1>
+			<p class="action_caption">Click the button below to enter Live Stream</p>
+			<button class="call_to_action_button" type="button" onclick="liveStream()">Enter Live Stream!</button>
+		</div>
+	</div>
+    
+    <script src="timer.js"></script>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <div class="footer">
+       <br>
+        <h6 style="text-align: center;">Copy right &copy; 2018 | All rights reserved.</h6><br>
+    </div>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
